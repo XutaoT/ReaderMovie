@@ -1,0 +1,7 @@
+@import "../movie-grid/movie-grid-template.wxss";
+
+.gridContainer{
+    background-color: #fff;
+    margin-top: 0;
+    padding-top: 10rpx;
+}

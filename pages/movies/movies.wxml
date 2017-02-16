@@ -1,0 +1,21 @@
+<import src="movies-list/movies-list-template.wxml" />
+<view class="search">
+  <icon type="search" class="search-icon" size="13" color="#405f80" />
+  <input type="text" placeholder="血战钢锯岭、你的名字" placeholder-class="placeholder" bindfocus="onBindFocus" bindblur="onBindBlur" />
+  <image class="xx-img" src="/images/icon/xx.png"></image>
+</view>
+<view class="container">
+  <view class="movies-template">
+    <template is="movieListTemplate" data="{{...inTheaters}}">
+    </template>
+  </view>
+  <view class="movies-template">
+    <template is="movieListTemplate" data="{{...comingSoon}}">
+    </template>
+  </view>
+  <view class="movies-template">
+    <template is="movieListTemplate" data="{{...top250}}">
+    </template>
+  </view>
+</view>
+<view></view>
